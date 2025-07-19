@@ -1,42 +1,75 @@
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
-  color: #333;
+* {
   margin: 0;
   padding: 0;
-  transition: background 0.3s, color 0.3s;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
 }
+
+body {
+  background: #f9f9f9;
+  color: #222;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem 0;
+}
+
 header {
-  background: #282c34;
+  background: #1f2937;
   color: white;
-  padding: 1em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding: 2rem 0;
+  text-align: center;
 }
-h1 {
-  margin: 0;
+
+header h1 {
+  font-size: 2rem;
 }
+
+.subtitle {
+  font-size: 1rem;
+  color: #ccc;
+}
+
 section {
-  padding: 2em;
+  padding: 2rem 0;
+  border-bottom: 1px solid #ddd;
 }
-form input, form textarea {
-  width: 100%;
-  padding: 0.5em;
-  margin-bottom: 1em;
+
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
 }
-button {
-  padding: 0.7em 1.5em;
-  background: #007acc;
+
+.project-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  margin-bottom: 1.5rem;
+}
+
+.resume-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.2rem;
+  background: #2563eb;
   color: white;
-  border: none;
-  cursor: pointer;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
 }
-button:hover {
-  background: #005fa3;
+
+.resume-btn:hover {
+  background: #1e40af;
 }
-.dark-mode {
-  background-color: #1e1e1e;
-  color: #e0e0e0;
+
+footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  background: #1f2937;
+  color: white;
 }
